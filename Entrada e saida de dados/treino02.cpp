@@ -7,7 +7,7 @@ int main(){
     printf("qual seu primeiro nome?");
     scanf ("%s", &nome);
 
-    printf("\aOl� %s", nome);
+    printf("\aOla %s", nome);
 
     return 0;
 }

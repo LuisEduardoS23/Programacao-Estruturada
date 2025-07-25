@@ -8,7 +8,7 @@ float resultado;
 
 int tipo_operacao (){
 
-    printf("Qual o tipo de opera��o deseja fazer com esses n�meros? \n Digite o n�mero equivalente:\n SOMA - 1;\n SUBTRA��O - 2;\n MULTIPLA��O - 3;\n DIVIS�O - 4.\n");
+    printf("Qual o tipo de operacao deseja fazer com esses numeros? \n Digite o numero equivalente:\n SOMA - 1;\n SUBTRACAO - 2;\n MULTIPLACAO - 3;\n DIVISAO - 4.\n");
 
     scanf("%d", &operacao);
 
@@ -30,7 +30,7 @@ int tipo_operacao (){
         resultado = num1/num2;
     }
 
-    printf("o resultado da sua opera��o �: %.2f", resultado);
+    printf("o resultado da sua operacao e: %.2f", resultado);
 
 }
 
@@ -38,10 +38,10 @@ int main(){
 
     setlocale(LC_ALL, "Portuguese");
 
-    printf("Escolha um n�mero:\n");
+    printf("Escolha um numero:\n");
     scanf("%d", &num1);
 
-    printf("Escolha um segundo n�mero\n");
+    printf("Escolha um segundo numero\n");
     scanf("%d", &num2);
 
     tipo_operacao();

@@ -13,10 +13,10 @@ int main(){
     float conversao;
 
     printf("- CONVERSOR DE TEMPERATURA -\n");
-    printf("Digite o número correspondente a medida de temperatura QUE SERÁ CONVERTIDA:\n - CELSIUS = 1; \n - FAHRENHEIT = 2;\n - KELVIN = 3; \n");
+    printf("Digite o numero correspondente a medida de temperatura QUE SERA CONVERTIDA:\n - CELSIUS = 1; \n - FAHRENHEIT = 2;\n - KELVIN = 3; \n");
     scanf("%d", &medida_origem);
 
-    printf("Digite o número correspondente a medida de temperatura QUE VOCÊ QUER CONVERTER:\n - CELSIUS = 1; \n - FAHRENHEIT = 2;\n - KELVIN = 3; \n");
+    printf("Digite o numero correspondente a medida de temperatura QUE VOCE QUER CONVERTER:\n - CELSIUS = 1; \n - FAHRENHEIT = 2;\n - KELVIN = 3; \n");
     scanf("%d", &medida_destino);
 
     if (medida_origem == celsius){
@@ -27,17 +27,16 @@ int main(){
 
         if(medida_destino == fahrenheit){
             conversao = graus_celsius * 1.8 + 32;
-            printf("%2.f °C é igual a %.2f °F. \n", graus_celsius, conversao);
+            printf("%2.f Â°C e igual a %.2f Â°F. \n", graus_celsius, conversao);
         }
         else if(medida_destino == kelvin){
             conversao = graus_celsius + 273;
-            printf("%.2f °C é igual a %.2f °K.", graus_celsius, conversao);
+            printf("%.2f Â°C e igual a %.2f Â°K.", graus_celsius, conversao);
         }
         else if(medida_destino == celsius){
-            printf("Você já sabe que %.2f°C é igual a %.2f °C.", graus_celsius, graus_celsius);
+            printf("Voce ja sabe que %.2fÂ°C e igual a %.2f Â°C.", graus_celsius, graus_celsius);
         }
         else{
-            printf("ERRO! REINICIE E ESCOLHA UM NÚMERO APENAS ENTRE AS ALTERNATIVAS");
         }
     }
 
@@ -49,17 +48,17 @@ int main(){
 
         if(medida_destino == celsius){
             conversao = (graus_fahrenheit - 32)/1.8;
-            printf("%.2f°F é igual a %.2f°C.", graus_fahrenheit, conversao);
+            printf("%.2fï¿½F ï¿½ igual a %.2fï¿½C.", graus_fahrenheit, conversao);
         }
         else if(medida_destino == kelvin){
             conversao = (graus_fahrenheit - 32) * 5/9 + 273;
-            printf("%.2f °F é igual a %.2f °K", graus_fahrenheit, conversao);
+            printf("%.2f ï¿½F ï¿½ igual a %.2f ï¿½K", graus_fahrenheit, conversao);
         }
         else if(medida_destino == fahrenheit){
-            printf("Você já sabe que %.2f °F é igual a %.2f °F", graus_fahrenheit, graus_fahrenheit);
+            printf("Vocï¿½ jï¿½ sabe que %.2f ï¿½F ï¿½ igual a %.2f ï¿½F", graus_fahrenheit, graus_fahrenheit);
         }
          else{
-            printf("ERRO! REINICIE E ESCOLHA UM NÚMERO APENAS ENTRE AS ALTERNATIVAS");
+            printf("ERRO! REINICIE E ESCOLHA UM Nï¿½MERO APENAS ENTRE AS ALTERNATIVAS");
         }
     }
 
@@ -71,22 +70,22 @@ int main(){
 
         if(medida_destino == celsius){
             conversao = graus_kelvin - 273;
-            printf("%.2f °K é igual a %.2f °C", graus_kelvin, conversao);
+            printf("%.2f ï¿½K ï¿½ igual a %.2f ï¿½C", graus_kelvin, conversao);
         }
         else if (medida_destino == fahrenheit){
             conversao = (graus_kelvin - 273) * 1.8 + 32;
-            printf("%.2f °K é igual a %.2f °F", graus_kelvin, conversao);
+            printf("%.2f ï¿½K ï¿½ igual a %.2f ï¿½F", graus_kelvin, conversao);
         }
         else if (medida_destino == kelvin){
-            printf("Você já sabe que %.2f °K é igual a %.2f °K", graus_kelvin, graus_kelvin);
+            printf("Vocï¿½ jï¿½ sabe que %.2f ï¿½K ï¿½ igual a %.2f ï¿½K", graus_kelvin, graus_kelvin);
         }
         else{
-            printf("ERRO! REINICIE E ESCOLHA UM NÚMERO APENAS ENTRE AS ALTERNATIVAS");
+            printf("ERRO! REINICIE E ESCOLHA UM Nï¿½MERO APENAS ENTRE AS ALTERNATIVAS");
         }
     }
 
     else{
-        printf("ERRO! REINICIE E ESCOLHA UM NÚMERO APENAS ENTRE AS ALTERNATIVAS");
+        printf("ERRO! REINICIE E ESCOLHA UM Nï¿½MERO APENAS ENTRE AS ALTERNATIVAS");
         }
 
     return 0;
